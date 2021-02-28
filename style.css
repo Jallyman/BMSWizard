@@ -1,3 +1,43 @@
 /* .navbar-brand{
     padding-right: 25em;
 } */
+
+html,
+.navbar {
+    background-color: #386766
+}
+
+.navbar-brand {
+    margin-right: 3rem;
+}
+p,
+h1 {
+    color: white;
+}
+
+.title,
+.subtitle {
+    color: white;
+}
+
+.navbar-item {
+    color: white;
+}
+
+a.navbar-item:hover {
+    color: #386766
+}
+
+@media screen and (min-width: 1024px) {
+    .container:not(.is-max-desktop):not(.is-max-widescreen) {
+        max-width: 900px;
+    }
+}
+
+.navbar.is-spaced {
+    padding: 3rem;
+}
+
+.section {
+    padding: 1rem;
+}
