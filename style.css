@@ -7,6 +7,8 @@ html,
     background-color: #386766
 }
 
+
+
 html, body {
     height:100%;
 }
@@ -38,10 +40,6 @@ body {
 
 }
 
-.content h2{
-        color: white;
-
-}
 
 p,
 h1,
@@ -49,12 +47,22 @@ h2 {
     color: white;
 }
 
+.title {
+    color: white;
+}
+
+.section{
+    padding-top: 0.5rem;
+}
 
 .navbar-item {
     color: white;
 
 }
 
+.home-image {
+    width: 16rem;
+}
 
 a.navbar-item:hover {
     color: #386766;
@@ -70,12 +78,6 @@ a.navbar-item:hover {
     padding-top: 2rem;
 }
 
-.section {
-    padding        : 0;
-    padding-top    : 2rem;
-    /* padding-left: 0.75rem; */
-
-}
 
 .navbar-burger {
     color: #ffffff;
@@ -85,13 +87,10 @@ a.navbar-item:hover {
     .navbar-item {
         color: #386766;
     }
+}
 
-    .section {
-        padding     : 0;
-        padding-top : 2rem;
-        padding-left: 0.75rem;
-
-    }
+.navbar.is-spaced {
+    padding: 1rem 0.75rem;
 }
 
 .navbar-burger:hover {
