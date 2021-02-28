@@ -7,25 +7,57 @@ html,
     background-color: #386766
 }
 
+html, body {
+    height:100%;
+}
+
+a:link, a:visited {
+    text-decoration: underline;
+    color: #386766;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+  }
+  .main {
+    flex: 1 0 auto;
+  }
+  .footer {
+    flex-shrink: 0;
+    padding: 2rem;
+    color: black;
+  }
+  .footer p {
+    color: grey;
+  }
+}
+
 .navbar-brand {
     margin-right: 3rem;
+
 }
+
+.content h2{
+        color: white;
+
+}
+
 p,
-h1 {
+h1,
+h2 {
     color: white;
 }
 
-.title,
-.subtitle {
-    color: white;
-}
 
 .navbar-item {
     color: white;
+
 }
 
+
 a.navbar-item:hover {
-    color: #386766
+    color: #386766;
 }
 
 @media screen and (min-width: 1024px) {
@@ -35,9 +67,37 @@ a.navbar-item:hover {
 }
 
 .navbar.is-spaced {
-    padding: 3rem;
+    padding-top: 2rem;
 }
 
 .section {
-    padding: 1rem;
+    padding        : 0;
+    padding-top    : 2rem;
+    /* padding-left: 0.75rem; */
+
+}
+
+.navbar-burger {
+    color: #ffffff;
+}
+
+@media screen and (max-width: 1023px) {
+    .navbar-item {
+        color: #386766;
+    }
+
+    .section {
+        padding     : 0;
+        padding-top : 2rem;
+        padding-left: 0.75rem;
+
+    }
+}
+
+.navbar-burger:hover {
+    background-color: white;
+}
+
+.footer-wrapper {
+    min-height: 100%;
 }
